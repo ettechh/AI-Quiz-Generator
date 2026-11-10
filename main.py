@@ -3,7 +3,7 @@ import json
 import os
 from google import genai
 
-API_KEY = "KEY"
+API_KEY = os.environ.get("KEY")
 MODEL = "gemini-3.5-flash-lite"
 
 TOPIC = "History"
