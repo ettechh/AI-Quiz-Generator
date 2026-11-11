@@ -30,13 +30,11 @@ A small web app that uses Google's Gemini AI to write a multiple-choice quiz on 
    pip install flask google-genai python-dotenv
    ```
 
-2. Insert your `.env` API :
+2. Insert your API KEY of your choosing (this program uses gemini-3.5-flash-lite):
 
    ```
    KEY=your_gemini_api_key
    ```
-
-   Don't use quotes or spaces around the `=`. Never share this file or upload it to GitHub.
 
 3. Start the app:
 
@@ -45,11 +43,6 @@ A small web app that uses Google's Gemini AI to write a multiple-choice quiz on 
    ```
 
 4. Open http://localhost:8080 in your browser.
-
-
-## Security note
-
-The API key is read from the `.env` file and is not stored in the code. Add `.env` to a `.gitignore` file so it is never committed.
 
 ## Built with
 
