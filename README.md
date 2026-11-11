@@ -30,7 +30,7 @@ A small web app that uses Google's Gemini AI to write a multiple-choice quiz on 
    pip install flask google-genai python-dotenv
    ```
 
-2. Create a file named `.env` in the same folder as `main.py` containing one line:
+2. Insert your `.env` API :
 
    ```
    KEY=your_gemini_api_key
@@ -46,28 +46,6 @@ A small web app that uses Google's Gemini AI to write a multiple-choice quiz on 
 
 4. Open http://localhost:8080 in your browser.
 
-## Customizing the quiz
-
-Use the form at the top of the page, or set the options in the address bar:
-
-```
-http://localhost:8080/?topic=Space&num_q=3&diff=hard
-```
-
-| Option   | Meaning                          | Default        |
-|----------|----------------------------------|----------------|
-| `topic`  | What the quiz is about           | History        |
-| `num_q`  | Number of questions              | 5              |
-| `diff`   | `easy`, `intermediate`, or `hard`| intermediate   |
-| `lang`   | Language of the quiz             | English        |
-
-To use a different port, set the `PORT` environment variable before starting the app.
-
-## Troubleshooting
-
-- **"Could not find an API key":** check that the file is named exactly `.env` (not `.env.txt`) and sits next to `main.py`. The message shows where the app looked.
-- **"Could not load quiz" on the page:** the AI request failed. The reason is shown on the page and in the terminal. Check your API key and the `MODEL` name near the top of `main.py`.
-- **Blank or odd quiz:** click "Generate New Quiz" to try again, since the AI occasionally returns a badly formatted response.
 
 ## Security note
 
