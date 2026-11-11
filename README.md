@@ -78,3 +78,7 @@ The API key is read from the `.env` file and is not stored in the code. Add `.en
 - [Flask](https://flask.palletsprojects.com/) for the web server
 - [Google Gemini API](https://ai.google.dev/) for generating the questions
 - Plain HTML, CSS, and JavaScript for the interface
+
+
+<img width="910" height="883" alt="image" src="https://github.com/user-attachments/assets/53617e17-8def-4e8d-9ea6-458d0d972d82" />
+
